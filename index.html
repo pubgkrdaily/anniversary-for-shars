@@ -5,12 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Happy 1st Anniversary Shars ❤️</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+    font-family:'Poppins',sans-serif;
 }
 
 html{
@@ -18,7 +22,10 @@ html{
 }
 
 body{
-    background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+    background:
+        radial-gradient(circle at top left,#ffe6f0 0%,transparent 40%),
+        radial-gradient(circle at bottom right,#ffd1dc 0%,transparent 40%),
+        linear-gradient(135deg,#fffafc,#ffe8ef,#ffdbe8);
     overflow-x:hidden;
     color:#4a0e1a;
 }
@@ -30,10 +37,19 @@ body{
     align-items:center;
     text-align:center;
     padding:20px;
+    background:
+    linear-gradient(
+        rgba(255,240,245,0.70),
+        rgba(255,240,245,0.70)
+    ),
+    url('cover.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
 }
 
 .hero-content{
-    background:rgba(255,255,255,0.15);
+    background:rgba(255,255,255,0.85);
     backdrop-filter:blur(12px);
     padding:40px;
     border-radius:25px;
@@ -41,7 +57,9 @@ body{
 }
 
 .hero h1{
-    font-size:3rem;
+    font-family:'Dancing Script',cursive;
+    color:#c2185b;
+    font-size:4rem;
     margin-bottom:15px;
 }
 
@@ -74,7 +92,7 @@ button:hover{
 }
 
 .message-box{
-    background:rgba(255,255,255,0.15);
+    background:rgba(255,255,255,0.85);
     backdrop-filter:blur(10px);
     padding:30px;
     border-radius:25px;
@@ -94,13 +112,13 @@ button:hover{
 .card{
     width:100%;
     max-width:900px;
-    background:rgba(255,255,255,0.15);
+    background:rgba(255,255,255,0.85);
     backdrop-filter:blur(8px);
     border-radius:25px;
     overflow:hidden;
     text-align:center;
 }
-    
+
 .card img{
     width:100%;
     height:auto;
@@ -128,15 +146,25 @@ button:hover{
 }
 
 .final-content{
-    background:rgba(255,255,255,0.15);
+    background:rgba(255,255,255,0.85);
     backdrop-filter:blur(12px);
     padding:50px;
     border-radius:30px;
     max-width:900px;
 }
 
+.hero-content,
+.message-box,
+.card,
+.final-content{
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
+    border:1px solid rgba(255,255,255,0.7);
+}
+
 .final h1{
-    font-size:3rem;
+    font-family:'Dancing Script',cursive;
+    color:#c2185b;
+    font-size:4rem;
     margin-bottom:30px;
 }
 
@@ -151,6 +179,8 @@ button:hover{
     font-size:24px;
     animation:float 8s linear infinite;
     opacity:0.7;
+    pointer-events:none;
+    z-index:10;
 }
 
 @keyframes float{
@@ -186,8 +216,16 @@ button:hover{
 
 @media(max-width:768px){
 
+    .hero{
+        background-attachment:scroll;
+    }
+
     .hero h1{
-        font-size:2rem;
+        font-size:2.7rem;
+    }
+
+    .hero-content{
+        padding:30px 22px;
     }
 
     .message-box{
@@ -199,11 +237,15 @@ button:hover{
     }
 
     .final h1{
-        font-size:2rem;
+        font-size:2.7rem;
     }
 
     .final p{
         font-size:1.2rem;
+    }
+
+    .final-content{
+        padding:35px 22px;
     }
 }
 </style>
@@ -217,8 +259,14 @@ button:hover{
 
 <section class="hero">
     <div class="hero-content">
-        <h1>❤️ Happy 1st Anniversary ❤️</h1>
-        <p>Our beautiful journey together...</p>
+        <h1>❤️ Shars &amp; Vicky ❤️</h1>
+        <p>
+            365 days of love, laughter, memories,
+            little fights and countless happy moments.
+        </p>
+        <p style="margin-top:15px;color:#8a2042;">
+            A journey worth celebrating forever ✨
+        </p>
         <button onclick="startJourney()">Tap To Begin ❤️</button>
     </div>
 </section>
@@ -259,6 +307,14 @@ button:hover{
     </div>
 </section>
 
+<div style="
+text-align:center;
+padding-top:60px;
+font-size:3rem;
+font-family:'Dancing Script',cursive;
+color:#c2185b;">
+❤️ Our Beautiful Journey ❤️
+</div>
 <div id="memories"></div>
 
 <section class="final fade">
@@ -266,14 +322,25 @@ button:hover{
         <h1>❤️ Happy 1st Anniversary Shars ❤️</h1>
 
         <p>
-            The best part of my life is not these memories...
+            The best part of my life is not just these memories...
             <br><br>
-            It's knowing that we still have a lifetime to create many more together.
+            It's knowing that every day with you creates a new one.
+            <br><br>
+            Thank you for bringing so much love,
+            happiness, support and laughter into my life.
+            <br><br>
+            No matter how many silly fights we have,
+            I always know that at the end of the day,
+            it is you and me together.
             <br><br>
             Next year indha maadhiri celebration-ku,
             namma joy-a share panna innum oru kutty member namma kooda iruppanga!
             <br><br>
-            Love you forever ❣️
+            Happy 1st Anniversary Shars ❣️
+            <br><br>
+            Love You Forever ❤️
+            <br><br>
+            - Vicky
         </p>
     </div>
 </section>
@@ -281,16 +348,15 @@ button:hover{
 <button class="music-btn" onclick="toggleMusic()">🎵</button>
 
 <script>
-
 const memoryData = [
 
 {
-title:"🌹 My First Bouquet",
+title:"🌹 The First Bouquet",
 image:"my_first_bouquet.png"
 },
 
 {
-title:"🎁 First Gift I Received From You",
+title:"🎁 A Gift I'll Always Remember",
 image:"the_gift_which_i_received_first_time_in_my_life.jpg"
 },
 
@@ -305,57 +371,57 @@ image:"our_first_selfie.jpg"
 },
 
 {
-title:"🎉 First Function Together",
+title:"🎉 Our First Celebration Together",
 image:"the_first_function_that_we_went_together.jpg"
 },
 
 {
-title:"🎬 Late Night Cinema",
+title:"🎬 Late Night Cinema Date",
 image:"late_night_cinema.jpg"
 },
 
 {
-title:"👕 Matching Outfit",
+title:"👕 Matching Outfit Moment",
 image:"matching_outfit.jpg"
 },
 
 {
-title:"🌄 Outing Memory",
+title:"🌄 A Beautiful Outing",
 image:"outing_memory.jpg"
 },
 
 {
-title:"📷 Photoshoot Memory",
+title:"📷 Captured Forever",
 image:"photoshoot_memory.png"
 },
 
 {
-title:"💖 Favorite Selfie",
+title:"💖 One Of My Favourite Selfies",
 image:"one_of_my_fav_selfie.jpg"
 },
 
 {
-title:"💕 Favorite Picture",
+title:"💕 One Of My Most Cherished Pictures",
 image:"one_of_my_fav_picture.jpg"
 },
 
 {
-title:"🏠 First Move Together After Marriage",
+title:"🏠 Our First Home Journey",
 image:"first_move_together_after_marriage.jpg"
 },
 
 {
-title:"🌴 Honeymoon Memory",
+title:"🌴 A Honeymoon To Remember",
 image:"honeymoon_memory.jpg"
 },
 
 {
-title:"✨ A Beautiful Memory",
+title:"✨ One More Beautiful Memory",
 image:"memory.jpg"
 },
 
 {
-title:"👶 Looking Forward To Our New Family Member",
+title:"👶 Our Dream For Tomorrow",
 image:"looking_forward_for_new_family_member.jpg"
 }
 
@@ -368,7 +434,7 @@ memoryData.forEach(memory=>{
 container.innerHTML += `
 <section class="memory fade">
 <div class="card">
-<img src="${memory.image}">
+<img src="${memory.image}" alt="${memory.title}">
 <h2>${memory.title}</h2>
 </div>
 </section>
@@ -433,7 +499,6 @@ document.querySelectorAll('.fade').forEach(el=>{
 observer.observe(el);
 });
 },500);
-
 </script>
 
 </body>
