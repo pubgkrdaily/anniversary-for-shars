@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 1st Anniversary Shars ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#ffdde1,#ee9ca7);
+    overflow-x:hidden;
+    color:white;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    padding:40px;
+    border-radius:25px;
+    max-width:700px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+button{
+    background:#ff4f81;
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:50px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+.message-section{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.message-box{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    padding:30px;
+    border-radius:25px;
+    max-width:900px;
+    line-height:2;
+    font-size:18px;
+}
+
+.memory{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:50px 20px;
+}
+
+.card{
+    width:100%;
+    max-width:900px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(8px);
+    border-radius:25px;
+    overflow:hidden;
+    text-align:center;
+}
+    
+.card img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:contain;
+}
+
+.card h2{
+    padding:20px;
+    font-size:2rem;
+}
+
+.card p{
+    padding:0 20px 25px;
+    font-size:1.1rem;
+}
+
+.final{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+    text-align:center;
+}
+
+.final-content{
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    padding:50px;
+    border-radius:30px;
+    max-width:900px;
+}
+
+.final h1{
+    font-size:3rem;
+    margin-bottom:30px;
+}
+
+.final p{
+    font-size:1.5rem;
+    line-height:2;
+}
+
+.heart{
+    position:fixed;
+    color:#ff1755;
+    font-size:24px;
+    animation:float 8s linear infinite;
+    opacity:0.7;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh);
+    }
+    to{
+        transform:translateY(-100px);
+    }
+}
+
+.fade{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 1s ease;
+}
+
+.fade.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.music-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:9999;
+    border-radius:50%;
+    width:60px;
+    height:60px;
+    font-size:25px;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .message-box{
+        font-size:16px;
+    }
+
+    .card h2{
+        font-size:1.5rem;
+    }
+
+    .final h1{
+        font-size:2rem;
+    }
+
+    .final p{
+        font-size:1.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="anniversary-song.mp3" type="audio/mpeg">
+</audio>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>❤️ Happy 1st Anniversary ❤️</h1>
+        <p>Our beautiful journey together...</p>
+        <button onclick="startJourney()">Tap To Begin ❤️</button>
+    </div>
+</section>
+
+<section id="message" class="message-section fade">
+    <div class="message-box">
+        <h2 style="text-align:center;margin-bottom:20px;">For My Shars ❤️</h2>
+
+        <p>
+        Hey Shars, indha naal la dhan unna naan mudhal thadava paathen.
+        Pure excitement-um, adhe nerathula konjam nervousness-um serndhu irundhadhu.
+        Nammo renduperum "Yes" sonna andha moment dhaan en life-odey ramba precious-ana memory.
+        <br><br>
+
+        Andha nallaiku approm, Unakaaga neraya chinna chinna vishayathula naan ennaiye maathikittu irukken.
+        Aama, namma podadhadha sandaiya?
+        Aana un kooda indha maadhiri innum neraya azhagana, healthy-ana sandaiyalam poda enaku aasaiya irukku!
+        <br><br>
+
+        Kalyanathuku munnadiyum sari, kalyanathuku appromum sari...
+        namma serndhu spend panna andha chinna chinna moments ellaam enaku innum nalla gyaabagam irukku.
+        Namma photos-a paakumbodhu ellaam en manasuku periya happiness kedaikkum, sometimes blushing ah irukum.
+        <br><br>
+
+        Namma kulla evvalovo sandai vandhaalum,
+        kadaisila neeyum samadhaanam aayiduva,
+        naanum samadhaanam aayiduven.
+        Idhu mattum eppovum namma mind-la irukkanum!
+        <br><br>
+
+        Indha azhagana 1st Year Anniversary-kulla namma adugedu vaakkrom.
+        Next year indha maadhiri celebration-ku,
+        namma joy-a share panna innum oru kutty member namma kooda iruppanga!
+        <br><br>
+
+        Love you as always ❣️
+        </p>
+    </div>
+</section>
+
+<div id="memories"></div>
+
+<section class="final fade">
+    <div class="final-content">
+        <h1>❤️ Happy 1st Anniversary Shars ❤️</h1>
+
+        <p>
+            The best part of my life is not these memories...
+            <br><br>
+            It's knowing that we still have a lifetime to create many more together.
+            <br><br>
+            Next year indha maadhiri celebration-ku,
+            namma joy-a share panna innum oru kutty member namma kooda iruppanga!
+            <br><br>
+            Love you forever ❣️
+        </p>
+    </div>
+</section>
+
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+
+<script>
+
+const memoryData = [
+
+{
+title:"🌹 My First Bouquet",
+image:"my_first_bouquet.png"
+},
+
+{
+title:"🎁 First Gift I Received From You",
+image:"the_gift_which_i_received_first_time_in_my_life.jpg"
+},
+
+{
+title:"📸 Our First Picture Together",
+image:"our_first_picture_together.jpg"
+},
+
+{
+title:"🤳 Our First Selfie",
+image:"our_first_selfie.jpg"
+},
+
+{
+title:"🎉 First Function Together",
+image:"the_first_function_that_we_went_together.jpg"
+},
+
+{
+title:"🎬 Late Night Cinema",
+image:"late_night_cinema.jpg"
+},
+
+{
+title:"👕 Matching Outfit",
+image:"matching_outfit.jpg"
+},
+
+{
+title:"🌄 Outing Memory",
+image:"outing_memory.jpg"
+},
+
+{
+title:"📷 Photoshoot Memory",
+image:"photoshoot_memory.png"
+},
+
+{
+title:"💖 Favorite Selfie",
+image:"one_of_my_fav_selfie.jpg"
+},
+
+{
+title:"💕 Favorite Picture",
+image:"one_of_my_fav_picture.jpg"
+},
+
+{
+title:"🏠 First Move Together After Marriage",
+image:"first_move_together_after_marriage.jpg"
+},
+
+{
+title:"🌴 Honeymoon Memory",
+image:"honeymoon_memory.jpg"
+},
+
+{
+title:"✨ A Beautiful Memory",
+image:"memory.jpg"
+},
+
+{
+title:"👶 Looking Forward To Our New Family Member",
+image:"looking_forward_for_new_family_member.jpg"
+}
+
+];
+
+const container=document.getElementById('memories');
+
+memoryData.forEach(memory=>{
+
+container.innerHTML += `
+<section class="memory fade">
+<div class="card">
+<img src="${memory.image}">
+<h2>${memory.title}</h2>
+</div>
+</section>
+`;
+
+});
+
+function startJourney(){
+
+document.getElementById('bgMusic').play();
+
+document.getElementById('message').scrollIntoView({
+behavior:'smooth'
+});
+}
+
+function toggleMusic(){
+
+const music=document.getElementById("bgMusic");
+
+if(music.paused){
+music.play();
+}else{
+music.pause();
+}
+}
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+heart.style.fontSize=Math.random()*20+15+"px";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},8000);
+
+}
+
+setInterval(createHeart,500);
+
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll('.fade').forEach(el=>{
+observer.observe(el);
+});
+
+setTimeout(()=>{
+document.querySelectorAll('.fade').forEach(el=>{
+observer.observe(el);
+});
+},500);
+
+</script>
+
+</body>
+</html>
